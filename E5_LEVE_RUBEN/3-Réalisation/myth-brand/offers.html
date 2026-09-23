@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Nos Offres — MYTH</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="logo">MYTH</div>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="offers.html">Nos offres</a>
+<a href="about.html">À propos</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Choisis ton expérience</h1>
+<p>Chaque niveau débloque une nouvelle réalité.</p>
+</div>
+</section>
+
+<section class="concept-grid">
+
+<div class="card offer" data-text="Identité digitale activée">
+<h3>MYTH CORE</h3>
+<p>Maillot premium + accès identité numérique.</p>
+</div>
+
+<div class="card offer" data-text="Avatar joueur débloqué">
+<h3>MYTH ELITE</h3>
+<p>Scan → personnage animé jouable.</p>
+</div>
+
+<div class="card offer" data-text="Univers immersif complet">
+<h3>MYTH LEGEND</h3>
+<p>Expérience sociale et monde digital privé.</p>
+</div>
+
+</section>
+
+<div id="offerVisual"></div>
+
+<footer>
+<p>© 2026 MYTH</p>
+</footer>
+
+<script src="three-effects.js"></script>
+
+<script>
+const visual = document.getElementById("offerVisual");
+
+document.querySelectorAll(".offer").forEach(card=>{
+card.addEventListener("mouseenter",()=>{
+
+visual.innerHTML = `
+<div style="
+height:320px;
+margin:80px auto;
+width:60%;
+background:linear-gradient(135deg,#00aaff,#000814);
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+font-weight:800;
+letter-spacing:2px;
+box-shadow:0 0 80px #00aaff66;
+transform:perspective(800px) rotateX(20deg);
+transition:0.5s;">
+${card.dataset.text}
+</div>`;
+});
+});
+</script>
+
+</body>
+</html>

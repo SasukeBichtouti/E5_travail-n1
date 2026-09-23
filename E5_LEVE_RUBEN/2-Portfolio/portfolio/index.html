@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruben | Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:system-ui;
+    }
+
+    body{
+      background:#0d0f14;
+      color:white;
+    }
+
+    /* NAVBAR */
+    nav{
+      display:flex;
+      justify-content:space-between;
+      padding:20px 40px;
+      background:#11131a;
+      border-bottom:1px solid #1f2230;
+    }
+
+    nav ul{
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+
+    .logo{
+      color:#4da3ff;
+      font-weight:bold;
+    }
+
+    /* HERO */
+    .hero{
+      text-align:center;
+      padding:120px 20px;
+    }
+
+    .hero h1{
+      font-size:2.7rem;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      opacity:.7;
+      max-width:600px;
+      margin:auto;
+    }
+
+    .buttons{
+      margin-top:30px;
+    }
+
+    button{
+      padding:12px 22px;
+      border-radius:8px;
+      border:none;
+      cursor:pointer;
+      margin:10px;
+      font-size:1rem;
+    }
+
+    .primary{
+      background:#4da3ff;
+      color:white;
+    }
+
+    .secondary{
+      background:transparent;
+      border:1px solid #4da3ff;
+      color:#4da3ff;
+    }
+
+    /* CARDS */
+    .cards{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:80px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:#151822;
+      padding:30px;
+      border-radius:12px;
+      width:260px;
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border:1px solid #4da3ff;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      opacity:.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Ruben.dev</div>
+    <ul>
+    <li>Accueil</li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="cv.html">Veile technologique </a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Développement Web & Cybersécurité</h1>
+
+    <p>
+      Étudiant BTS SIO passionné par la conception d’applications modernes,
+      performantes et maintenables avec TypeScript.
+    </p>
+
+    <div class="buttons">
+      <button class="primary">Voir mes projets</button>
+      <button class="secondary" id="launch-game">
+        🎮 Lancer le Snake
+      </button>
+    </div>
+  </section>
+
+  <!-- COMPETENCE PREVIEW -->
+  <section class="cards">
+
+    <div class="card">
+      <h3>💻 Développement</h3>
+      <p>Architecture modulaire, TypeScript strict et interfaces propres.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Cybersécurité</h3>
+      <p>Bonnes pratiques OWASP et conception sécurisée.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Performance</h3>
+      <p>Optimisation front-end et expérience utilisateur fluide.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 — Ruben Portfolio
+  </footer>
+
+  <!-- TypeScript vient EN BONUS -->
+    <script type="module" src="src/main.ts"></script>
+</body>
+</html>

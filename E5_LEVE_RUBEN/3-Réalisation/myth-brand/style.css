@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.navbar a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.hero p {
+  margin-top: 15px;
+  opacity: 0.7;
+}
+
+.cta {
+  margin-top: 30px;
+  padding: 14px 30px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #1e90ff33, transparent);
+  filter: blur(120px);
+  animation: pulse 6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.2); }
+}
+
+/* CONCEPT */
+
+.concept {
+  padding: 120px 60px;
+  text-align: center;
+}
+
+.concept-grid {
+  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #151515;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 120px 60px;
+}
+
+.jersey {
+  width: 200px;
+  height: 240px;
+  background: linear-gradient(135deg,#0af,#003);
+  border-radius: 20px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.player-name {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+@keyframes float {
+  50% { transform: translateY(-15px); }
+}
+
+/* SOCIAL */
+
+.social {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.floating-comments span {
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 18px;
+  background: #111;
+  border-radius: 20px;
+  animation: drift 6s infinite ease-in-out;
+}
+
+@keyframes drift {
+  50% { transform: translateY(-10px); }
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.5;
+}
+
+#bg3d{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.player-preview{
+  perspective:1000px;
+}
+
+.player-video{
+  width:220px;
+  border-radius:20px;
+  transform:rotateY(-10deg);
+  box-shadow:0 0 40px #00aaff55;
+  transition:0.5s;
+}
+
+.player-video:hover{
+  transform:rotateY(10deg) scale(1.05);
+}

@@ -1,0 +1,96 @@
+/* --------- BAODY --------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* --------- NAVBAR --------- */
+.navbar {
+  display: flex;
+  background-color: #767070;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------- BOUTON ----------- */
+.button { 
+  background-color: #767070;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+/* --------- SECTION MAILLOTS --------- */
+.catalogue {
+  text-align: center;
+  padding: 40px;
+}
+
+.grille-maillots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.carte {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+.carte:hover {
+  transform: translateY(-5px);
+}
+
+.carte img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* --------- FOOTER --------- */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffcc00;
+}

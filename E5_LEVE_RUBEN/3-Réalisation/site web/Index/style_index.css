@@ -1,0 +1,200 @@
+/* ----------- BODY ----------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* ----------- NAVBAR ----------- */
+.navbar {
+  font-size: 20px;
+  display: flex;
+  background-color: #767070;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ----------- BOUTON ----------- */
+
+.button { 
+  background-color: #767070;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+.button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+/* ----------- PRESENTATION ----------- */
+.presentation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e2e2e2;
+  padding: 60px 0;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.presentation img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ----------- BOUTON CENTRAL ----------- */
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.btn-main {
+  background: #333;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-main:hover {
+  background: #555;
+}
+
+/* ----------- NOUVEAUX PRODUITS ----------- */
+.nouveaux {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card .link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.card .link:hover {
+  color: #ffcc00;
+}
+
+/* ----------- AVIS CLIENTS ----------- */
+.avis {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 0;
+}
+
+.avis-card {
+  width: 250px;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.avis-card:hover {
+  transform: translateY(-5px);
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-right: 10px;
+}
+
+/* ----------- FOOTER ----------- */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
